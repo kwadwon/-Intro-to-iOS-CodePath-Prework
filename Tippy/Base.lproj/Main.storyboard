@@ -121,6 +121,9 @@
                     <view key="view" contentMode="scaleToFill" id="x75-uY-EYy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <userGuides>
+                            <userLayoutGuide location="81" affinity="minY"/>
+                        </userGuides>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Percentages" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0nY-iC-kxp">
                                 <rect key="frame" x="20" y="61" width="236" height="40"/>
@@ -131,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8z5-Ii-SUM">
-                                <rect key="frame" x="20" y="125" width="99" height="21"/>
+                                <rect key="frame" x="20" y="103" width="99" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -139,7 +142,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="pNN-cf-qXN">
-                                <rect key="frame" x="20" y="201" width="85" height="21"/>
+                                <rect key="frame" x="20" y="162" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -147,7 +150,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum Tip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="co5-mU-9h4">
-                                <rect key="frame" x="20" y="281" width="103" height="21"/>
+                                <rect key="frame" x="20" y="238" width="103" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -155,7 +158,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="18" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="WDb-c4-4Pc">
-                                <rect key="frame" x="181" y="121" width="119" height="30"/>
+                                <rect key="frame" x="181" y="99" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="textColor" red="0.33512049913406372" green="0.78771513700485229" blue="0.12216564267873764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -166,7 +169,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="Red-SH-cB8">
-                                <rect key="frame" x="181" y="197" width="119" height="30"/>
+                                <rect key="frame" x="181" y="158" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="textColor" red="0.32818576693534851" green="0.77273517847061157" blue="0.1190163716673851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -177,7 +180,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="22" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="BoR-Nq-PTd">
-                                <rect key="frame" x="181" y="277" width="119" height="30"/>
+                                <rect key="frame" x="181" y="234" width="119" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <color key="textColor" red="0.33512049913406372" green="0.78771513700485229" blue="0.12216564267873764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -196,7 +199,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum tip must be smaller than default" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eez-OX-gRv">
-                                <rect key="frame" x="20" y="154" width="217" height="14"/>
+                                <rect key="frame" x="20" y="132" width="217" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -204,7 +207,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median tip must be smaller than Maximum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nzc-tJ-I0S">
-                                <rect key="frame" x="20" y="230" width="222" height="14"/>
+                                <rect key="frame" x="20" y="191" width="222" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -212,7 +215,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median tip must be larger than Minimum" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MqA-fy-2RB">
-                                <rect key="frame" x="20" y="244" width="212" height="14"/>
+                                <rect key="frame" x="20" y="205" width="212" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -220,7 +223,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Maximum tip must be larger than Median" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hHZ-qf-LUe">
-                                <rect key="frame" x="20" y="310" width="214" height="14"/>
+                                <rect key="frame" x="20" y="267" width="214" height="14"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -228,7 +231,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="sDD-nR-VjS">
-                                <rect key="frame" x="20" y="382" width="280" height="29"/>
+                                <rect key="frame" x="20" y="322" width="280" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <segments>
@@ -239,13 +242,52 @@
                                 <color key="tintColor" red="0.32818576693534851" green="0.77273517847061157" blue="0.1190163716673851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Tip Amount" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="geL-0Y-ZZK">
-                                <rect key="frame" x="20" y="353" width="148" height="21"/>
+                                <rect key="frame" x="20" y="299" width="148" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.32818576693534851" green="0.77273517847061157" blue="0.1190163716673851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="sZk-8H-OqA">
+                                <rect key="frame" x="20" y="396" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <color key="onTintColor" red="0.11954172700643539" green="0.33081433176994324" blue="0.2946401834487915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onDarkThemeChanged:" destination="uD0-JE-V2y" eventType="valueChanged" id="YER-2N-RkH"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Theme Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tvi-tN-xPg">
+                                <rect key="frame" x="20" y="374" width="191" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32818576693534851" green="0.77273517847061157" blue="0.1190163716673851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Region Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eMa-du-sXW">
+                                <rect key="frame" x="20" y="448" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.32818576690000001" green="0.77273517849999995" blue="0.1190163717" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="1D6-98-inB">
+                                <rect key="frame" x="20" y="474" width="280" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                                <segments>
+                                    <segment title="US Dollar"/>
+                                    <segment title="UK Pound"/>
+                                    <segment title="Chinese Yuan"/>
+                                </segments>
+                                <color key="tintColor" red="0.32818576693534851" green="0.77273517847061157" blue="0.1190163716673851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="onCurrencyChanged:" destination="uD0-JE-V2y" eventType="valueChanged" id="X1r-gW-ueD"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.94610330379999996" green="1" blue="0.91190529170000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -262,10 +304,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="currencySwitch" destination="1D6-98-inB" id="pmZ-ED-pAn"/>
                         <outlet property="defaultTipControl" destination="sDD-nR-VjS" id="lSN-Gc-LlC"/>
                         <outlet property="maximumTipField" destination="BoR-Nq-PTd" id="e8j-tj-9c7"/>
                         <outlet property="medianTipField" destination="Red-SH-cB8" id="XDP-rg-G50"/>
                         <outlet property="minimumTipField" destination="WDb-c4-4Pc" id="qFI-fv-Wgd"/>
+                        <outlet property="themeControl" destination="sZk-8H-OqA" id="BwU-ja-64x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pmf-Fg-BgW" userLabel="First Responder" sceneMemberID="firstResponder"/>

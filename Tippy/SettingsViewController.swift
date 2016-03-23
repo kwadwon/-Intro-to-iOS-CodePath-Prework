@@ -14,6 +14,8 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var medianTipField: UITextField!
     @IBOutlet weak var maximumTipField: UITextField!
     @IBOutlet weak var defaultTipControl: UISegmentedControl!
+    @IBOutlet weak var themeControl: UISwitch!
+    @IBOutlet weak var currencySwitch: UISegmentedControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,7 +44,6 @@ class SettingsViewController: UIViewController {
 
     @IBAction func onTipAmountChanged(sender: AnyObject) {
         
-        
         //Look at previous values. If new values don't follow the order of min < med < max, reset to previous values
         
         let min = (minimumTipField.text! as NSString).doubleValue
@@ -65,17 +66,28 @@ class SettingsViewController: UIViewController {
             saveUserSettings()
         }
     }
+    
     @IBAction func onEditingEnded(sender: AnyObject) {
         view.endEditing(true)
     }
     
     
+    @IBAction func onDarkThemeChanged(sender: AnyObject) {
+        saveUserSettings()
+    }
+    
+    @IBAction func onCurrencyChanged(sender: AnyObject) {
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setInteger(currencySwitch.selectedSegmentIndex, forKey: "default_currency")
+        defaults.synchronize()
+    }
     func saveUserSettings() {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setObject(defaultTipControl.titleForSegmentAtIndex(0), forKey: "minimum_tip_value")
         defaults.setObject(defaultTipControl.titleForSegmentAtIndex(1), forKey: "median_tip_value")
         defaults.setObject(defaultTipControl.titleForSegmentAtIndex(2), forKey: "maximum_tip_value")
         defaults.setInteger(defaultTipControl.selectedSegmentIndex, forKey: "default_tip_amount")
+        defaults.setBool(themeControl.on, forKey: "default_theme_dark")
         defaults.synchronize()
     }
     
@@ -94,19 +106,13 @@ class SettingsViewController: UIViewController {
         defaultTipControl.setTitle("\(maxTipField!)", forSegmentAtIndex: 2)
 
         defaultTipControl.selectedSegmentIndex = defaults.integerForKey("default_tip_amount")
+        
+        themeControl.on = defaults.boolForKey("default_theme_dark")
+        
+        currencySwitch.selectedSegmentIndex = defaults.integerForKey("default_currency")
     }
     @IBAction func onBackClicked(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
